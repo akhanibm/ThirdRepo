@@ -2,8 +2,7 @@ provider "aws" {
   region = "us-west-1"
 }
 
-# Consuming your Private Registry Module
-module "webapp1" {
-  source  = "app.terraform.io/akhan-21/webapp1/aws"
-  version = "2.0.0"
+module "webapp2" {
+  source  = "app.terraform.io/akhan-21/webapp2/aws"
+  version = "2.0.5"
 }
