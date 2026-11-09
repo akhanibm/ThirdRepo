@@ -17,9 +17,6 @@ module "webapp2" {
   version = "3.0.1"
 }
 
-provider "aws" {
-  region = "us-east-1"
-}
 
 # VIOLATION 1: Missing Mandatory Tags
 # The Sentinel policy checks for "Environment", "Owner", and "Project" tags. 
