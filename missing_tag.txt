@@ -1,0 +1,6 @@
+# VIOLATION 1: Missing Mandatory Tags
+# The Sentinel policy checks for "Environment", "Owner", and "Project" tags. 
+# Omitting the 'tags' block entirely will cause the tagging rule to fail.
+resource "aws_s3_bucket" "violating_bucket" {
+  bucket = "sentinel-failure-test-bucket-987654"
+}
